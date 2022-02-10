@@ -1,6 +1,13 @@
 {
   "name": "agile-templates",
   "version": "0.1.0",
+  "description": "Agile Templates",
+  "author": {
+    "name": "Mazahir Hashimli",
+    "linkedin": "https://www.linkedin.com/in/mazahir-hashimli-086824106/",
+    "github": "https://github.com/mazahir89"
+  },
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
