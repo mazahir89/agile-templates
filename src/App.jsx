@@ -1,11 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import BusinessModelCanvas from './components/BMC';
 
 function App() {
   return (
     <div className="App">
-      Agile Templates
+      <BusinessModelCanvas></BusinessModelCanvas>
     </div>
   );
 }
