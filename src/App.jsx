@@ -1,4 +1,3 @@
-import "./App.css";
 import BusinessModelCanvas from "./components/BMC";
 
 function App() {

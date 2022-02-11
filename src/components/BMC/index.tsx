@@ -6,19 +6,31 @@ import {
   CustomerRelationships,
   CustomerSegments,
   KeyActivities,
+  KeyActivitiesIcon,
   KeyPartners,
+  KeyPartnersIcon,
   KeyResources,
   RevenueStreams,
+  Title,
   ValueProposition,
+  Wrapper,
 } from "./index.styled";
+
+import KeyActivitiesPNG from "./assets/key-activities.png";
+import KeyPartnersPNG from "./assets/key-partners.png";
 
 function BusinessModelCanvas() {
   return (
-    <div>
-      Business Model Canvas
+    <Wrapper>
       <Container>
-        <KeyPartners>Key Partners</KeyPartners>
-        <KeyActivities>Key Activities</KeyActivities>
+        <Title>Business Model Canvas</Title>
+
+        <KeyPartners>
+          Key Partners <KeyPartnersIcon src={KeyPartnersPNG} />
+        </KeyPartners>
+        <KeyActivities>
+          Key Activities <KeyActivitiesIcon src={KeyActivitiesPNG} />
+        </KeyActivities>
         <KeyResources>Key Resources</KeyResources>
         <ValueProposition>Value Propositions</ValueProposition>
         <CustomerRelationships>Customer Relationships</CustomerRelationships>
@@ -27,7 +39,7 @@ function BusinessModelCanvas() {
         <CostStructure>Cost Structure</CostStructure>
         <RevenueStreams>Revenue Streams</RevenueStreams>
       </Container>
-    </div>
+    </Wrapper>
   );
 }
 
