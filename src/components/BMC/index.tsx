@@ -3,14 +3,13 @@ import {
   Channels,
   Container,
   CostStructure,
-  CustomerRelationships,
-  CustomerSegments,
+  CustomerRelationship,
+  CustomerSegment,
   KeyActivities,
-  KeyActivitiesIcon,
+  Icon,
   KeyPartners,
-  KeyPartnersIcon,
   KeyResources,
-  RevenueStreams,
+  RevenueStream,
   Title,
   ValueProposition,
   Wrapper,
@@ -18,6 +17,13 @@ import {
 
 import KeyActivitiesPNG from "./assets/key-activities.png";
 import KeyPartnersPNG from "./assets/key-partners.png";
+import ValuePropositionPNG from "./assets/value-proposition.png";
+import CustomerRelationshipPNG from "./assets/customer-relationship.png";
+import ChannelsJPG from "./assets/channels.jpg";
+import CustomerSegmentJPG from "./assets/customer-segment.jpg";
+import RevenueStreamJPG from "./assets/revenue-stream.jpg";
+import KeyResourcesJPG from "./assets/key-resources.jpg";
+import CostStructurePNG from "./assets/cost-structure.png";
 
 function BusinessModelCanvas() {
   return (
@@ -26,18 +32,32 @@ function BusinessModelCanvas() {
         <Title>Business Model Canvas</Title>
 
         <KeyPartners>
-          Key Partners <KeyPartnersIcon src={KeyPartnersPNG} />
+          Key Partners <Icon src={KeyPartnersPNG} />
         </KeyPartners>
         <KeyActivities>
-          Key Activities <KeyActivitiesIcon src={KeyActivitiesPNG} />
+          Key Activities <Icon src={KeyActivitiesPNG} />
         </KeyActivities>
-        <KeyResources>Key Resources</KeyResources>
-        <ValueProposition>Value Propositions</ValueProposition>
-        <CustomerRelationships>Customer Relationships</CustomerRelationships>
-        <Channels>Channels</Channels>
-        <CustomerSegments>Customer Segments</CustomerSegments>
-        <CostStructure>Cost Structure</CostStructure>
-        <RevenueStreams>Revenue Streams</RevenueStreams>
+        <KeyResources>
+          Key Resources <Icon src={KeyResourcesJPG} />
+        </KeyResources>
+        <ValueProposition>
+          Value Proposition <Icon src={ValuePropositionPNG} />
+        </ValueProposition>
+        <CustomerRelationship>
+          Customer Relationship <Icon src={CustomerRelationshipPNG} />
+        </CustomerRelationship>
+        <Channels>
+          Channels <Icon src={ChannelsJPG} />
+        </Channels>
+        <CustomerSegment>
+          Customer Segment <Icon src={CustomerSegmentJPG} />
+        </CustomerSegment>
+        <CostStructure>
+          Cost Structure <Icon src={CostStructurePNG} />
+        </CostStructure>
+        <RevenueStream>
+          Revenue Stream <Icon src={RevenueStreamJPG} />
+        </RevenueStream>
       </Container>
     </Wrapper>
   );

@@ -1,11 +1,9 @@
 import styled from "styled-components";
-import KeyActivitiesPNG from './assets/key-activities.png';
-
+import KeyActivitiesPNG from "./assets/key-activities.png";
 
 export const Wrapper = styled.div`
-display: flex;
-justify-content: center;
-
+  display: flex;
+  justify-content: center;
 `;
 export const Container = styled.div`
   margin: 1%;
@@ -20,10 +18,11 @@ export const Container = styled.div`
   width: 100vw;
   display: grid;
   border-radius: 6px;
-  grid-template: 0.5fr 2fr 2fr 2fr / 2fr 2fr 2fr 2fr 2fr;
+  grid-template: 0.5fr 2fr 2fr 2fr / 2fr 2fr 2fr 2.1fr 2fr;
   gap: 3px;
   color: white;
   box-shadow: 6px 6px 4px #888888;
+  overflow-wrap: break-word;
 `;
 
 export const Title = styled.div`
@@ -37,7 +36,7 @@ export const Title = styled.div`
 `;
 
 export const KeyPartners = styled.div`
-  background-color:  #fb9b08;
+  background-color: #fb9b08;
   border-radius: 6px;
   padding-left: 6px;
   padding-top: 6px;
@@ -76,7 +75,7 @@ export const ValueProposition = styled.div`
   grid-column: 3 / 4;
 `;
 
-export const CustomerRelationships = styled.div`
+export const CustomerRelationship = styled.div`
   background-color: #423199;
   border-radius: 6px;
   padding-left: 6px;
@@ -87,7 +86,7 @@ export const CustomerRelationships = styled.div`
 `;
 
 export const Channels = styled.div`
-  background-color: #ac2ef2;
+  background-color: #274fd3;
   border-radius: 6px;
   padding-left: 6px;
   padding-top: 6px;
@@ -96,8 +95,8 @@ export const Channels = styled.div`
   grid-column: 4 / 5;
 `;
 
-export const CustomerSegments = styled.div`
-  background-color: #0081ff;
+export const CustomerSegment = styled.div`
+  background-color: #009cfd;
   border-radius: 6px;
   padding-left: 6px;
   padding-top: 6px;
@@ -107,7 +106,7 @@ export const CustomerSegments = styled.div`
 `;
 
 export const CostStructure = styled.div`
-  background-color: #274fd3;
+  background-color: #a23272;
   border-radius: 6px;
   padding-left: 6px;
   padding-top: 6px;
@@ -116,8 +115,8 @@ export const CostStructure = styled.div`
   grid-column: 1 / 4;
 `;
 
-export const RevenueStreams = styled.div`
-  background-color: #a23272;
+export const RevenueStream = styled.div`
+  background-color: #ac2ef2;
   border-radius: 6px;
   padding-left: 6px;
   padding-top: 6px;
@@ -126,16 +125,9 @@ export const RevenueStreams = styled.div`
   grid-column: 4 / 6;
 `;
 
-export const KeyActivitiesIcon = styled.img`
-float: right;
-padding-right: 6px;
-width: 20px;
-height: 20px;
-`;
-
-export const KeyPartnersIcon = styled.img`
-float: right;
-padding-right: 6px;
-width: 20px;
-height: 20px;
+export const Icon = styled.img`
+  float: right;
+  padding-right: 6px;
+  width: 20px;
+  height: 20px;
 `;
